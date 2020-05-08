@@ -13,17 +13,19 @@ public class main {
     
     public static void main ( String[] args) {
         // TODO code application logic here
-        int[] listJPJS = new int[] { 100, 500, 1000 };
-        int[] listJPSKALA = new int[] { 400, 2500, 6000 };
+        int[] listJarakPetaJarakSebenarnya = new int[] { 10, 250, 7300 };
+        int[] listJarakPetaSkala = new int[] { 400, 2500, 16000 };
     
-    JS Js = new JS("JS");
-    SKALA Skala = new SKALA("Skala");
+        JarakSebenarnya JarakSebenarnya = new JarakSebenarnya("JarakSebenarnya");
+        
+        Skala Skalapeta = new Skala("Skala");
 
-    for (int index = 0; index < listJPJS.length; index++) {
-        Js.calculate(listJPJS[index]);
-        Js.printResult(index); }
-    for(int index = 0; index < listJPSKALA.length; index++) {
-        Skala.calculate(listJPSKALA[index]);
-        Skala.printresult(index); }
+    for (int index = 0; index < listJarakPetaJarakSebenarnya.length; index++) {
+        JarakSebenarnya.calculate(listJarakPetaJarakSebenarnya[index]);
+        JarakSebenarnya.printResult(index); }
+    
+    for(int index = 0; index < listJarakPetaSkala.length; index++) {
+        Skalapeta.calculate(listJarakPetaSkala[index]);
+        Skalapeta.printresult(index); }
     }
 }
