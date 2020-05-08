@@ -15,18 +15,15 @@ public class main {
         // TODO code application logic here
         int[] listJPJS = new int[] { 100, 500, 1000 };
         int[] listJPSKALA = new int[] { 400, 2500, 6000 };
-    }
     
     JS Js = new JS("JS");
     SKALA Skala = new SKALA("Skala");
 
     for (int index = 0; index < listJPJS.length; index++) {
         Js.calculate(listJPJS[index]);
-        Js.printResult(index);
-}
-    
+        Js.printResult(index); }
     for(int index = 0; index < listJPSKALA.length; index++) {
         Skala.calculate(listJPSKALA[index]);
-        Skala.printresult(index);
+        Skala.printresult(index); }
     }
 }
