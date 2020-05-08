@@ -17,8 +17,8 @@ public class main {
         int[] listJPSKALA = new int[] { 400, 2500, 6000 };
     }
     
-    JS Js = new JS("JS") {};
-    SKALA Skala = new SKALA("Skala") {};
+    JS Js = new JS("JS");
+    SKALA Skala = new SKALA("Skala");
 
     for (int index = 0; index < listJPJS.length; index++) {
         Js.calculate(listJPJS[index]);
